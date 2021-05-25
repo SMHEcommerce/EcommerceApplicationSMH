@@ -1,0 +1,189 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+    body{
+        background-color: beige;
+        font-family: tahoma;
+        min-width: 599px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+.menu{
+        background:green;
+        text-align: center;
+      }
+.menu ul{
+        display:inline-flex;
+        list-style:none;
+        color:white;
+      }
+.menu ul li{
+        width:100px;
+        margin:15px;
+        padding:15px;
+      }
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+
+}
+.active, .menu ul li:hover{
+
+  background: #2bab0d;
+  border-radius: 3px;
+  
+} 
+.menu .fa{
+  margin-right: 8px;
+  
+}
+.submenu{
+  display: none;
+}
+.menu ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  background: green;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu ul li:hover .submenu ul{
+  display: block;
+  margin:10px;
+}
+.menu ul li:hover .submenu ul li{
+  width: 150px;
+  padding:10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .submenu ul li:last-child{
+
+  border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+  color: #b2ff00;
+
+}
+.fa-angle-right{
+  float:right;
+}
+.diaporama{
+  margin: 0 auto;
+  width:1250px;
+  height: 500px;
+  border: 3px solid #333;
+  position: relative;
+  top: -50px;
+  background-repeat: no-repeat;
+  z-index: -2;
+  
+  -webkit-animation-name: diapo;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  
+  /*pour les utilisateurs de mozilla*/
+  -moz-animation-name: diapo;
+  -moz-animation-duration: 30s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  
+  animation-name: diapo;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+    
+  }
+  @-webkit-keyframes diapo{
+    0% {background-image: url(epices.jpg);}
+    22% {background-image: url(graincafes.jpg);}
+    44% {background-image: url(pistaches.jpg);}
+    66%{background-image: url(noixdecajou.jpg);}
+    88%{background-image: url(pasta.jpg);}
+    100% {background-image: url(lotusbiscuit1.jpg);}
+  }
+  @-moz-keyframes diapo{
+    0% {background-image: url(epices.jpg);}
+    22% {background-image: url(graincafes.jpg);}
+    44% {background-image: url(pistaches.jpg);}
+    66%{background-image: url(noixdecajou.jpg);}
+    88%{background-image: url(pasta.jpg);}
+    100% {background-image: url(lotusbiscuit1.jpg);}
+  }
+  @keyframes diapo{
+    0% {background-image: url(epices.jpg);}
+    22% {background-image: url(graincafes.jpg);}
+    44% {background-image: url(pistaches.jpg);}
+    66%{background-image: url(noixdecajou.jpg);}
+    88%{background-image: url(pasta.jpg);}
+    100% {background-image: url(lotusbiscuit1.jpg);}
+  }
+  
+h1{
+  margin: 100px;
+  position: relative;
+  top: -100px;
+  text-shadow: 6px 6px 6px rgb(0, 0, 0);
+}
+
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+/*.social-links {
+  background-color: green;
+  position: absolute;
+  height: 150px;
+  width: 1420px;
+  position: absolute;
+  top: 1850px;
+}*/
+h2{
+  position: absolute;
+  left: 350px;
+  top: 35px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.social-links {
+  background:green;
+  text-align: center;
+  position: relative;
+  bottom: -920px;
+  
+}
+.social-links ul{
+  display:inline-flex;
+  list-style:none;
+  color:white;
+}
+.social-links ul li{
+  width:300px;
+  margin:15px;
+  padding:10px;
+  font-size: 25px;
+}
+.social-links ul li a{
+text-decoration: none;
+color: white;
+font-size: 40px;
+
+}
+
+.social-links .fa{
+margin-right: 8px;
+
+}
+
