@@ -20,3 +20,13 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+
+
+/*==================================PARTIE ADMIN =======================================================*/
+
+Route::get('/adminDashboard', function()
+{
+    return view('admin.dashboard'); // return to the view of dashboard.blade.php that exist in the admin folder inside the ressource folder
+});
