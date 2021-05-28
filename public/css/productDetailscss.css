@@ -1,0 +1,657 @@
+.chemin{
+font-family: Segoe UI Emoji;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 26px;
+color: #000000;
+margin-top: 5%;
+margin-left: 3.8%;
+}
+
+
+.inline{
+   float: left;
+    margin:10px;
+    width: 30%;
+}
+
+.cart{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.info{
+    margin-top: 3.5%;
+    width: 65%;
+    margin-left: 1%;
+}
+
+
+.oneProduitImg{
+    margin-top: 54.1%;
+    margin-left: 5%;
+    height: 212px;
+    width: 93%;
+}
+
+
+.nameProduct{
+    font-family: Segoe UI Emoji;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+.categorieName{
+    font-family: Segoe UI Emoji;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 3%;
+
+    /* identical to box height */
+    
+    
+    color: #000000;
+
+}
+
+.starsAvis{
+    margin-top:2%;
+}
+
+.avis{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 23%;
+    margin-top: -3.25%;
+    color: #0F38C9;
+    
+}
+.prixProduct{
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 76px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+.livraison{
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -2%;
+    margin-bottom: 3%;
+
+    color: #000000;
+}
+
+
+.nbrProduits{
+    width: 41%;
+    height: 32px;
+background: #FFFFFF;
+border: 0.2px solid #000000;
+box-sizing: border-box;
+border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+span {cursor:pointer; }
+
+.number{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 0%;
+
+    background: #FFFFFF;
+    border: 0.2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 136px;
+}
+.minus{
+    margin-left: 12%;
+}
+.minus, .plus{
+    width:20px;
+    height:34px;
+    background: transparent;
+   /* border-radius:4px;*/
+    padding:4px 5px 8px 5px;
+   /* border:1px solid #ddd;*/
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+
+
+
+
+
+font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 22px;
+
+color: rgba(0, 0, 0, 0.69);
+
+
+}
+
+
+input{
+    height:34px;
+width: 48px;
+text-align: center;
+font-size: 26px;
+    /*border:1px solid #ddd;
+    border-radius:4px;*/
+    border: 0;
+display: inline-block;
+vertical-align: middle;
+
+
+font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+
+color: rgba(0, 0, 0, 0.69);
+
+
+
+}
+   
+  
+
+
+
+
+
+
+.achaticon{
+    margin-left: -7%;
+    margin-top: 33.5%;
+}
+
+
+.ajoutPan{
+    border:1px solid red;
+    background: #D10303;
+    font-family: "Sen";
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+width: 84%;
+    height: 69px;
+color: #FFFFFF;
+}
+
+
+
+
+/*======================================================================================*/
+
+
+hr{
+    border: 0.2px solid rgba(0, 0, 0, 0.26);
+    width: 120%;
+    margin-left: -5%;
+    margin-bottom: 1%;
+}
+
+
+.detailCard{
+    height: 200px;
+    padding: 20px;
+}
+
+.details{
+    margin-bottom: 1%;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 48px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.detailsText{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    
+    color: #000000;
+    
+}
+
+
+
+/*****************************************************************************************************/
+
+.detailfiche{
+    height: 430px;
+    padding: 20px;
+}
+
+
+
+
+.detailsPC,.detailsDT{
+    margin-bottom: 1%;
+    padding: 16px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 48px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+
+.PC{
+    width: 45%;
+    height: 251px;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 4.21177px 4.21177px rgba(0, 0, 0, 0.25);
+    margin: 43px;
+    margin-left: 29px;
+}
+
+.PC hr{
+    border: 0.2px solid rgba(0, 0, 0, 0.26);
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+}
+
+.PC ul li {
+    font-family: "Segoe UI";
+font-style: normal;
+font-weight: 600;
+font-size: 20.2706px;
+line-height: 34px;
+margin-left: 44px;
+
+color: #000000;
+}
+
+.DT{
+    margin-top: 3.89%;
+    width: 46%;
+    height: 251px;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 4.21177px 4.21177px rgba(0, 0, 0, 0.25);
+}
+
+
+.DT hr{
+    border: 0.2px solid rgba(0, 0, 0, 0.26);
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+}
+
+
+.DT ul li {
+    font-family: "Segoe UI";
+font-style: normal;
+font-weight: 600;
+font-size: 20.2706px;
+line-height: 34px;
+margin-left: 44px;
+
+color: #000000;
+}
+
+
+
+/******************************************************************************************************/
+
+.CardAvis{
+    height: 730px;
+    padding: 20px;
+}
+
+.avisUsers{
+    width: 30%;
+    height: 451px;
+    float: left;
+    background: white;;
+   
+    margin: 43px;
+    margin-left: 29px;
+}
+
+.etoils{
+    
+    width: 90%;
+    height: 251px;
+    background: #F4F0F0;;
+  
+}
+
+
+.score{
+    margin-top: -3%;
+    padding-top: 23%;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 53px;
+
+color: #F5B021;
+
+}
+
+
+.nbrAvis{
+    margin-top: 7%;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+
+.nV{
+    width: 90%;
+
+}
+.nV span{
+    float: left;
+    margin-left: 1%;
+    padding-left: 10px;
+}
+.progressBar{
+    width: 58%;
+    margin-left: 41%;
+    margin-top: 12%;
+
+    background-color: #C4C4C4;;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+
+}
+
+
+.nbrVote{
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.58);
+}
+
+
+.star{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/*---*/
+
+.nbrCom{
+margin-top: 3%;
+font-family: Segoe UI;
+font-style: normal;
+font-weight: 350;
+font-size: 36px;
+line-height: 48px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.userPdp{
+    float: left;
+    margin-top: 4%;
+    border: 0.504223px solid #000000;
+    /*box-sizing: border-box;*/
+    border-radius: 50%;
+    width: 80px;
+   height: 80px;
+   margin-left: 25.5%;
+}
+
+
+.userName{
+    margin-top: 12%;
+    float: left;
+    font-family: "Segoe UI Emoji";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.152px;
+    line-height: 19px;
+    color: #000000;
+    margin-left: -11.1%;
+}
+
+
+.userComment{
+    margin-top: 14%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    width: 40%;
+    margin-left: 47%;
+    padding: 2%;
+}
+
+
+.commentaires hr{
+    border: 2.01689px solid #FF0000;
+    width: 13%;
+    top: 313.5%;
+    left: 62.2%;
+    margin-bottom: -1%;
+    position: absolute;
+}
+
+
+
+
+
+.precBtn{
+
+    margin-top: 5.5%;
+    margin-left: 14%;
+    float: left;
+    width: 187px;
+    height: 46.39px;
+    color: white;
+    margin-right: 6.5%;
+    background: green;
+    margin-left: 10.5%;
+
+}
+
+.nextBtn{
+    margin-top: 5.5%;
+    float: left;
+    width: 187px;
+    height: 46.39px;
+    color: white;
+
+    background: #FF0101;
+}
+
+
+
+
+/****************************************************************************************************/
+.detailAutresP{
+    height: 467px;
+    padding: 20px;
+}
+
+.autreP{
+    padding-top: 5%;
+    padding-left: 18%;
+
+ 
+}
+
+.prev{
+    position: absolute;
+    margin-top: 7.8%;
+    margin-left: 11%;
+    cursor: pointer;
+
+}
+
+
+.next{
+    position: absolute;
+    margin-top: -12.55%;
+    margin-left: 59%;
+    cursor: pointer;
+}
+.prod{
+    margin-top: 7%;
+    width: 52%;
+    height: 245px;
+ 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin-left: -6%;
+    float: left;
+
+
+}
+
+.ImgProd{
+    border-radius: 50%;
+    width: 110px;
+   height: 110px;
+}
+
+
+.nomP{
+    font-family: Segoe UI Emoji;
+font-style: normal;
+font-weight: normal;
+font-size: 200%;
+line-height: 29px;
+
+color: #000000;
+}
+
+
+.prixP{
+    font-family: Segoe UI Emoji;
+font-style: normal;
+font-weight: normal;
+margin-top:6%;
+font-size: 153%;
+line-height: 19px;
+
+color: #000000;
+}
+
+
+
+
+.slide {
+    display: none;
+    background: white;
+    width: 500px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 300px;
+    margin-left: 39%;
+  }
+  
+
+  .active {
+    display: block;
+  }
+  
+
+
+
+/************************************************************************************************/
+
+
+
+.footer{
+margin-top: 3%;
+margin-left: 42%;
+
+    font-family: "Rockwell";
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 47px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+/**********************************************************************************************************/
+

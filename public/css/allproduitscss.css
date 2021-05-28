@@ -1,0 +1,115 @@
+
+ .title{
+    font-family: "SimSun-ExtB";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+    
+    color: #000000;
+}
+
+.CategorieDiv{
+    width: 100%;
+    height: 600px;
+  
+    margin-top: 8%;
+    margin-bottom: 20%;
+}
+
+.categorieImg{
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+.line{
+    border-left: 4px solid #FF0000;
+    height: 70px;
+    /*position: absolute;*/
+    margin-left: 11%;
+    margin-top: -6%;
+}
+
+
+.categorieTitle{
+    font-family: "Segoe UI";
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 48px;
+margin-left: 12%;
+margin-top: -6.5%;
+
+}
+
+
+.produitsofcategori{
+
+    width: 80%;
+    height: 600px;
+    margin-left: 13%;
+    margin-top: -3%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: left;
+}
+
+
+.oneproduit{
+    float: left;
+    width: 20%;
+    height: 42%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 4%;
+    margin-bottom: 4.5%;
+    margin-top: 1%;
+  
+    
+}
+.oneproduit:hover{
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+border: 0.5px solid cyan;
+}
+
+
+.produitImg{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.prix{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: bold;
+    
+    font-size: 200%;
+    line-height: 44px;
+    color:black;
+    margin-left: 10%;
+}
+
+.produittitle{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 32px;
+    color:black;
+    margin-left: 10%;
+}
+
+.quantite{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color:black;
+    margin-left: 10%;
+}

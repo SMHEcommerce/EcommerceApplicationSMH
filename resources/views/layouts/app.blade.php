@@ -17,9 +17,30 @@
         @livewireStyles
 
         <!--Styles concerning navBAR -->
-        <link rel="stylesheet" href="css/navbarcss.css">
+        <link rel="stylesheet" href="{{ asset('css/navbarcss.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Bootstrap-->
+        <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!--Styles concerning allproducts page -->
+        <link rel="stylesheet" href="{{ asset('css/allproduitscss.css') }} ">
+
+        <!--Styles concerning productDetails page -->
+                             <!-- CSS -->
+        <link rel="stylesheet" href="{{ asset('css/productDetailscss.css') }} ">
+                            <!-- JavaScript -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!--To include Jquery-->
+        <script type="text/javascript" src="{{ asset('js/achatPlusMoins.js') }}" ></script>
+        
+        <!--Styles concerning MyProducts - Paiement Page -->
+        <link rel="stylesheet" href="{{ asset('css/myproductscss.css') }} ">
+        <link rel="stylesheet" href="{{ asset('css/multistepscss.css') }} ">
+       
+        
+
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>

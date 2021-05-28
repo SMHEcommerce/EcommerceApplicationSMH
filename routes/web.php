@@ -20,3 +20,19 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::get('/allproducts','App\Http\Controllers\ProductsController@index')->name('users.produits.allproducts');
+Route::get('/allproduct/{namecat?}/{namep?}','App\Http\Controllers\ProductsController@getproduct')->name('users.produits.productDetails');
+
+
+
+
+Route::post('/panier/ajouter','App\Http\Controllers\CartController@store')->name('cart.store');
+
+Route::get('/ValiderAchats','App\Http\Controllers\CartController@index')->name('users.produits.myproducts');
+
+Route::get('/viderPanier', function()
+{
+    Cart::destroy();
+});

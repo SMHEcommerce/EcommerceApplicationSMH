@@ -9,7 +9,7 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
                         <!--<x-jet-application-mark class="block h-9 w-auto" />-->
-                        <img src="images/logo2.jpg" alt="Chaouki Distribution" width="180" height="500" class="logo" >
+                        <img src="{{ asset('images/logo2.jpg') }}" alt="Chaouki Distribution" width="180" height="500" class="logo" >
                     </a>
                 </div>
 
@@ -34,7 +34,8 @@
 
 
                 <div class="navL hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}">
+                    
+                    <x-jet-nav-link href="{{ route('users.produits.allproducts') }} " :active="request()->routeIs('users.produits.allproducts','users.produits.productDetails')" >
                         {{ __('Nos Produits') }}
                     </x-jet-nav-link>
                 </div>
@@ -102,9 +103,9 @@
                         </x-jet-dropdown>
                     </div>
                 @endif
-
+                        
                 <!-- Settings Dropdown -->
-                <div class="ml-3 relative">
+                <div class="ml-3 relative" style="margin-right: -108px;">
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -112,10 +113,7 @@
                                     <img class="pdp h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
 
-                                <div class="panier">
-                                    <i class="achaticon fa fa-shopping-cart" style="font-size:30px;margin-top: -7%;"></i>
-                                    <div class="nbrAchatcircle"><span class="nbrAchat">14</span></div>
-                                </div>
+                               
                             @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
@@ -172,6 +170,13 @@
                     </svg>
                 </button>
             </div>
+
+            <a href="{{ route('users.produits.myproducts') }}" class="panier">
+                                    <i class="achaticon fa fa-shopping-cart" style="font-size:30px;margin-top: -10%;
+                                             margin-left: 48%;"></i>
+                                    <div class="nbrAchatcircle"><span class="nbrAchat">{{ Cart::count() }}</span></div>
+             </a>
+
         </div>
     </div>
 
