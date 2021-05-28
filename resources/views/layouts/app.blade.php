@@ -39,7 +39,8 @@
         <link rel="stylesheet" href="{{ asset('css/myproductscss.css') }} ">
         <link rel="stylesheet" href="{{ asset('css/multistepscss.css') }} ">
        
-        
+         <!--Styles concerning Dashboard Admin -- First Page -->
+        <link rel="stylesheet" href="{{ asset('css/dashboardAdmincss.css') }} ">
 
 
         <!-- Scripts -->
