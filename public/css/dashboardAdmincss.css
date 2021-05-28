@@ -1,0 +1,263 @@
+
+
+.cartAdmin{
+    width: 132%;
+    margin-left: -16%;
+    margin-top: -5%;
+    height: 600px;
+}
+
+
+.adminpdp{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+
+
+.MessageEntre{
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 64px;
+/* identical to box height */
+position: absolute;
+left: 32%;
+    top: 57%;
+color: #000000;
+}
+
+
+.etoileAdmin{
+    width: 35%;
+    height: 8%;
+    position: absolute;
+    top: 69%;
+    left: 33.5%;
+}
+
+
+
+.infoCnx{
+   
+    position: absolute;
+    top: 86%;
+    left: 29.5%;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+
+
+.TBadmin{
+    float: left;
+    width: 20%;
+    height: 100px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-left: 10%;
+margin-top: 2%;
+}
+
+
+
+
+/***************************************************************************************/
+
+
+.TB{
+    width: 100%;
+    padding: 20px;
+    height: 800px;
+}
+
+.TBimgs{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 9%;
+    margin-left: 7%;
+    float: left;
+}
+
+.TBimgsInfo{
+    float: left;
+    margin-left: 4%;
+}
+
+.TBInfoTitle{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+
+.TBTitle{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: rgba(0, 0, 0, 0.71);
+}
+
+
+.TBadminInfo{
+    margin-top:5%;
+}
+
+
+.statImg{
+    width: 90%;
+    height: 272px;
+    margin-left: 4%;
+    margin-top: 7%;
+}
+
+
+
+.stats{
+    height: 448px !important;
+}
+
+
+.Prd{
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 29px;
+
+color: #000000;
+}
+
+.DT{
+    height: 448px !important;
+}
+
+
+
+
+
+/*************************************************************************************************/
+
+
+
+
+
+
+.cardmsgs{
+
+    width: 100%;
+    padding: 20px;
+    height: 576px;
+}
+
+.imguser{
+    margin-left: 18% !important;
+    
+}
+
+
+.Repondre{
+    background: #49564F !important;
+    position: absolute !important;
+    left: 58.8% !important;
+    top: 296% !important;
+}
+
+.Repondre:hover{
+    background-color: #2B312E !important;
+    position: absolute !important;
+    left: 58.8% !important;
+    top: 296% !important;
+}
+
+
+.repondreMsg{
+    margin-top: 13%;
+}
+
+.userName{
+    float:left;
+}
+.minus{
+    width: 48px;
+    height: 17px;
+    margin-top: 8%;
+    margin-left: 55%;
+    float:left;
+    cursor:pointer;
+}
+
+
+/*****************************************************************************************/
+
+
+
+.notif{
+    font-family: Segoe UI Emoji;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.69);
+margin-left: 6%;
+margin-top: 4%;
+}
+
+
+.notifbody{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: 7%;
+    margin-top:3%;
+}
+
+
+
+.notiftime{
+    font-family: Segoe UI;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.79);
+    margin-left: 6%;
+}
+
+
+.notifs{
+   overflow-y: scroll;
+   overflow-x: hidden;
+   height: 273px;
+    
+}
