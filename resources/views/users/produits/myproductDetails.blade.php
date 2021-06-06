@@ -7,7 +7,7 @@
 
 
 
-    <h4 class="chemin">Nos Produits   >    {{ $products->namecat }}    >     {{ $produit['namep'] }} </h4>
+    <h4 class="chemin">Mes Achats   >    {{ $products->namecat }}    >     {{ $produit['namep'] }} </h4>
 
 
     <!--===================================Produit Card============================================-->
@@ -18,7 +18,8 @@
                 <div class="inline img">
                 <img class="oneProduitImg"src="{{asset('images/food.jpg')}}" alt="Bastilla">
                  </div>
-                 <form action="{{ route('cart.store') }}" method="POST">
+                 <?php  $url = route('cart.delete')."/".  $products->namecat ."/" . $produit['namep'];?>
+                 <form action="{{ $url }}" method="GET">
                             @csrf
                  
                     <div class="inline info">
@@ -28,24 +29,17 @@
                         <h6 class="avis"> (9 avis)</h6>
                         <h1 class="prixProduct"> {{ $produit['prix'] }} DH </h1>
                         <h6 class="livraison">+ livraison à partir de 16.00 Dhs vers CASABLANCA - Anfa</h6>
-                        <div class="number">
-	                        <span class="minus">-</span>
-	                        <input type="text" name="occurence" value="1"/>
-	                        <span class="plus">+</span>
-                        </div>
+                       
 
                       
                             <!--here we'll add all the parameters of the product -->
                            
                             <input type="hidden" name="user_id" value="{{ Auth::user()->_id }}">
-                            <input type="hidden" name="user_name" value="{{ Auth::user()->name }}">
-                            <input type="hidden" name="user_pdp" value="{{ Auth::user()->profile_photo_url}}">
                             <input type="hidden" name="namep" value="{{ $produit['namep'] }}">
                             <input type="hidden" name="prix" value="{{ $produit['prix'] }}">
-                            <input type="hidden" name="namecat" value=" {{ $products->namecat }}">
                             <input type="hidden" name="quantite" value="{{ $produit['quantite'] }}">
                             <!--======================================================-->
-                             <button class="ajoutPan" type="submit" value="Ajouter Au Panier"> <img class="achaticon"src="{{asset('images/achatPlus.png')}}" alt="AcheterIcon">Ajouter Au Panier </button>
+                             <button class="ajoutPan" type="submit"  style="margin-top:8%" value="Annuler Commande"> <img class="achaticon"src="{{asset('images/supprimerP.png')}}" alt="AcheterIcon">Supprimer du Panier</button>
                         </form>
                     </div>
                  

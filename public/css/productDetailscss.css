@@ -142,8 +142,15 @@ span {cursor:pointer; }
     width: 136px;
 }
 .minus{
-    margin-left: 12%;
+    width: 48px;
+    height: 17px;
+    margin-top: 1% !important;
+    margin-left: -3% !important;
+    float: left;
+    cursor: pointer;
 }
+
+
 .minus, .plus{
     width:20px;
     height:34px;

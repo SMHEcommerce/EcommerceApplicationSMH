@@ -10,7 +10,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     padding-left: 2%;
-    width: 401px;
+    width: 94%;
     height: 63px;
     font-family: Roboto;
     font-style: normal;

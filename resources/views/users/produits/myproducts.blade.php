@@ -36,9 +36,10 @@
                                     
 
                                     <div class="produitsofcategori">
-                                   <!-- @foreach(Cart::content() as $produit)-->
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
+                                    @foreach($cart->produits_C as $produit)
+                                    <?php $url = route('users.produits.myproductDetails')."/". $produit['namecat'] ."/" . $produit['namep']?>
+                                        <a href=" {{ $url }}">
+                                                <div class="oneproduit mr-6" style="
                                                                 margin-top: 8%;
                                                                 margin-left: -1%;
                                                             ">
@@ -47,189 +48,36 @@
                                                             <img class="produitImg"src="images/1.png" alt="Bastilla">
                                                     </center> 
                                                     <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
+                                                        <h2 class="prix"> {{ $produit['prix'] }} DH</h2>
+                                                        <h4 class="produittitle">{{ $produit['namep'] }}</h4>
+                                                        <h6 class="produittitle">X {{ $produit['occurence'] }}</h6>
+                                                      
                                                         
                                                     </br>
 
                                                 </div>
                                         </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                             
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                               
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                               
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                               
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <a href=" # ">
-                                                <div class="oneproduit" style="
-                                                                margin-top: 8%;
-                                                                
-                                                            ">
-                                                            </br>
-                                                    <center>
-                                                            <img class="produitImg"src="images/1.png" alt="Bastilla">
-                                                    </center> 
-                                                    <br>
-                                                        <h2 class="prix"> {{ $produit->price }} DH</h2>
-                                                        <h4 class="produittitle">{{ $produit->name }}</h4>
-                                                        
-                                                    </br>
-
-                                                </div>
-                                        </a>
-                                        <!--@endforeach-->
+                                       
+                                        @endforeach
                                         
                                        </div>  
                                     </div>
 
-                                    <h1 class="totalM"> Total :     1666,99 DH </h1>
+
+                                    <a href="{{ route('users.produits.suivreCommandeStat') }}" class=" suivreC action-button" style="
+                                            position: absolute;
+                                            top: 59%;
+                                            left: 56%;
+                                            width: 39%;
+                                            height: 46px;
+                                            font-size: 21px;
+                                            border-radius: inherit;
+                                            background-color: #C00000;
+                                            border: 1px solid #C00000;
+                                            padding: 3px;
+                                        ">Suivre Ma Commande</a> 
+
+                                    <h1 class="totalM"> Total :    {{ $totalP }} DH </h1>
                                     <button type="button" class="action-button previous_button" style="
                                             top: 90%;
                                             left: 36%;
@@ -285,7 +133,7 @@
                                                         color: rgba(0, 0, 0, 0.8);
                                                         text-align: initial;
                                                         height: 51px;
-                                                " id="fname" name="firstname" placeholder="+212  7 68 55 42 32">
+                                                " id="fname" name="firstname" value="+212  7 68 55 42 32">
                                                         </br>
                                                 <label for="lname" style="
                                                     font-family: Simonetta;
@@ -315,7 +163,7 @@
                                                 line-height: 38px;
                                                 color: rgba(0, 0, 0, 0.8);
                                                 text-align: initial;
-                                                height: 51px;" name="lastname" placeholder="LOT HAJ FATEH - CASABLANCA RC 284 APPT 2">
+                                                height: 51px;" name="lastname" value="LOT HAJ FATEH - CASABLANCA RC 284 APPT 2">
    
                                     </div>
 
@@ -331,11 +179,16 @@
                                             left: 36%;
                                             position: absolute;
                                         ">Précédent</button>
+                                 
                                     <button type="button" class="next action-button" style="
                                             top: 2904%;
                                             left: 50%;
+                                            
+                                            width: 23%;
+
                                             position: absolute;
-                                        ">Suivant</button>  
+                                        ">Valider Mes achats</button> 
+                                    </a> 
                                 </fieldset>  
 
                             <!--=====================================================================-->
@@ -345,7 +198,7 @@
                                     <img class="successImg"src="{{asset('images/succeess.png')}}" alt="Bastilla">
                                     
                                     
-                                    <a href="#" class=" suivreC action-button" style="
+                                    <a href="{{ route('users.produits.suivreCommande') }}" class=" suivreC action-button" style="
                                             position: absolute;
                                             top: 349%;
                                             left: 32%;

@@ -7,7 +7,30 @@
 
 
 
-   
+    @if(session('success'))
+        <div id="alertS" class="alert alert-success" style="
+       background: #D4EDDA;
+    border: 1px solid #CDEBD3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 2%;
+    width: 401px;
+    height: 102px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #457D52;
+    margin-left: 60%;
+    position: absolute;
+    top: -3%;">
+     
+            {{ session('success') }}
+        </div>
+    @endif
 
 
     <!--===================================Dashboard First Card ============================================-->

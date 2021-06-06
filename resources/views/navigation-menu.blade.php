@@ -51,6 +51,33 @@
                         {{ __('Nous Contacter') }}
                     </x-jet-nav-link>
                 </div>
+
+
+                <!--Naviguation Admin -->
+
+
+
+
+               <!-- <div class="navL hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
+                        {{ __('Tableau de bord') }}
+                    </x-jet-nav-link>
+                </div>
+
+                <div class="navL hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('admin.gestionstock') }}" :active="request()->routeIs('admin.gestionstock')" >
+                        {{ __('Gestion de Stock') }}
+                    </x-jet-nav-link>
+                </div>
+
+                <div class="navL hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('admin.commandesUsers.commandes') }}" :active="request()->routeIs('admin.commandesUsers.commandes')">
+                        {{ __('Nouvelles Commandes') }}
+                    </x-jet-nav-link>
+                </div>-->
+<!--=================================================================-->
+
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -170,13 +197,13 @@
                     </svg>
                 </button>
             </div>
-
-            <a href="{{ route('users.produits.myproducts') }}" class="panier">
+<!--A commenter pour view Admin -->
+        <a href="{{ route('users.produits.myproducts') }}" class="panier">
                                     <i class="achaticon fa fa-shopping-cart" style="font-size:30px;margin-top: -10%;
                                              margin-left: 48%;"></i>
-                                    <div class="nbrAchatcircle"><span class="nbrAchat">{{ Cart::count() }}</span></div>
+                                    <div class="nbrAchatcircle"><span class="nbrAchat">{{ $totalA }}</span></div>
              </a>
-
+<!--==================-->
         </div>
     </div>
 

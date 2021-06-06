@@ -43,6 +43,9 @@
         <!--Styles concerning Dashboard Admin -- First Page -->
         <link rel="stylesheet" href="{{ asset('css/dashboardAdmincss.css') }} ">
 
+        <!--Styles concerning Gestion Stock Admin Page -->
+        <link rel="stylesheet" href="{{ asset('css/gestionstockcss.css') }} ">
+        
         
        
         
